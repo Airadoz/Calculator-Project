@@ -16,6 +16,7 @@ Stupid for this layout, but fun
     width: 100%;
     height: auto;
     grid-template-columns: repeat(4, 1fr);
+
     grid-template-areas: 
     'clear percent delete divide'
     'seven eight nine multiplys'
@@ -23,10 +24,10 @@ Stupid for this layout, but fun
     'one two three plus'
     'empty-one  zero empty-two equals';
 }
-#empty-one{
+#double-zero{
     grid-area: empty-one;
 }
-#empty-two{
+#coma{
     grid-area: empty-two;
 }
 #plus{
@@ -83,6 +84,15 @@ Stupid for this layout, but fun
 #zero{
     grid-area: zero;
 }
+/*
+Added a border radius for a buttons
+*/
+.buttons>*{
+    border-radius: 50%;
+}
+/*
+Added wrapper to make an outline and center/change position for whole unit
+*/
 .wrapper{
     display: grid;
     width: 350px;
