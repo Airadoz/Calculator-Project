@@ -6,7 +6,6 @@ html{
 .container{
     display: grid;
     justify-content: center;
-    margin-block: 20vw;
 }
 /*
 Setting areas using grid-area property
@@ -22,7 +21,13 @@ Stupid for this layout, but fun
     'seven eight nine multiplys'
     'four five six minus'
     'one two three plus'
-    '...  zero .... equals';
+    'empty-one  zero empty-two equals';
+}
+#empty-one{
+    grid-area: empty-one;
+}
+#empty-two{
+    grid-area: empty-two;
 }
 #plus{
     grid-area: plus;
@@ -77,4 +82,11 @@ Stupid for this layout, but fun
 }
 #zero{
     grid-area: zero;
+}
+.wrapper{
+    display: grid;
+    width: 350px;
+    height: 500px;
+    outline: black 1px solid;
+    background-color: rgb(240, 199, 150);
 }
