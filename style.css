@@ -1,0 +1,80 @@
+html{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    display: grid;
+    justify-content: center;
+    margin-block: 20vw;
+}
+/*
+Setting areas using grid-area property
+Stupid for this layout, but fun
+*/
+.buttons{
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 
+    'clear percent delete divide'
+    'seven eight nine multiplys'
+    'four five six minus'
+    'one two three plus'
+    '...  zero .... equals';
+}
+#plus{
+    grid-area: plus;
+}
+#multiply{
+    grid-area: multiplys;
+}
+#divide{
+    grid-area: divide;
+}
+#minus{
+    grid-area: minus;
+}
+#del{
+    grid-area: delete;
+}
+#percent{
+    grid-area: percent;
+}
+#clear{
+    grid-area: clear;
+}
+#equals{
+    grid-area: equals;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+#six{
+    grid-area: six;
+}
+#seven{
+    grid-area: seven;
+}
+#eight{
+    grid-area: eight;
+}
+#nine{
+    grid-area: nine;
+}
+#zero{
+    grid-area: zero;
+}
