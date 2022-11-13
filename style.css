@@ -1,11 +1,24 @@
+/*
+Reset
+*/
 html{
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-}
-.container{
     display: grid;
     justify-content: center;
+}
+/*
+Added wrapper to make an outline and center/change position for whole unit */
+.wrapper{
+    padding: 1rem;
+    margin: 12rem;
+    display: grid;
+    width: 350px;
+    height: 500px;
+    outline: black 1px solid;
+    background-color: rgb(240, 199, 150);
+    border-radius: 1rem;
 }
 /*
 Setting areas using grid-area property
@@ -23,80 +36,63 @@ Stupid for this layout, but fun
     'four five six minus'
     'one two three plus'
     'empty-one  zero empty-two equals';
-}
-#double-zero{
-    grid-area: empty-one;
-}
-#coma{
-    grid-area: empty-two;
-}
-#plus{
-    grid-area: plus;
-}
-#multiply{
-    grid-area: multiplys;
-}
-#divide{
-    grid-area: divide;
-}
-#minus{
-    grid-area: minus;
-}
-#del{
-    grid-area: delete;
-}
-#percent{
-    grid-area: percent;
-}
-#clear{
-    grid-area: clear;
-}
-#equals{
-    grid-area: equals;
-}
-#one{
+} 
+.buttons [data-grid-area-value = '1']{
     grid-area: one;
 }
-#two{
-    grid-area: two;
-}
-#three{
+.buttons [data-grid-area-value = '3']{
     grid-area: three;
 }
-#four{
+.buttons [data-grid-area-value = '4']{
     grid-area: four;
 }
-#five{
+.buttons [data-grid-area-value = '5']{
     grid-area: five;
 }
-#six{
+.buttons [data-grid-area-value = '6']{
     grid-area: six;
 }
-#seven{
+.buttons [data-grid-area-value = '7']{
     grid-area: seven;
 }
-#eight{
+.buttons [data-grid-area-value = '8']{
     grid-area: eight;
 }
-#nine{
+.buttons [data-grid-area-value = '9']{
     grid-area: nine;
 }
-#zero{
-    grid-area: zero;
+.buttons [data-grid-area-value = 'clear']{
+    grid-area: clear;
 }
-/*
+.buttons [data-grid-area-value = 'equals']{
+    grid-area: equals;
+}
+.buttons [data-grid-area-value = 'plus']{
+    grid-area: plus;
+}
+.buttons [data-grid-area-value = 'minus']{
+    grid-area: minus;
+}
+.buttons [data-grid-area-value = 'multiplys']{
+    grid-area: multiplys;
+}
+.buttons [data-grid-area-value = 'divide']{
+    grid-area: divide;
+}
+.buttons [data-grid-area-value = '00']{
+    grid-area: empty-one;
+}
+/* 
 Added a border radius for a buttons
 */
 .buttons>*{
     border-radius: 50%;
-}
+} 
 /*
-Added wrapper to make an outline and center/change position for whole unit
+Outline for a screen
 */
-.wrapper{
-    display: grid;
-    width: 350px;
-    height: 500px;
-    outline: black 1px solid;
-    background-color: rgb(240, 199, 150);
+.screen{
+    outline: 1px black solid;
+    outline-offset: -1.5rem;
+    border-radius: 2rem;
 }
