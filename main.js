@@ -1,13 +1,14 @@
 const screen = document.querySelector('.screen');
-const possibleButtons = Array.from(document.querySelectorAll("button"));
+const possibleButtons = document.querySelectorAll("button");
 
-let chosenValue = possibleButtons.forEach((button)=> addEventListener('click', (e)=>{
-    result = e.target.id;
-    return result;
-}));
+// // possibleButtons.map();
+// let text = possibleButtons.forEach((button)=>addEventListener('click', (e)=>{
+//     result = e.target.textContent;
+//     screen.innerHTML=result;
+//     return result;
+// }));
 
-if(chosenValue === 'one'){
-    screen.innerHTML = '1';
-}
+
+
 
 // const chosenValue = possibleButtons.map(findId);
